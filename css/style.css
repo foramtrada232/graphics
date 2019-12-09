@@ -176,12 +176,11 @@ text-align: left;
 }
 .desk_from_text{
         position: absolute;
-        font-size: 15px;
-        /* color: #FFFFFF; */
+        font-size: 28px;
+        left: 310px;
+        color: #FFFFFF;
         font-family: "Poppins";
         font-weight: 600;
-        text-align: center;
-        /* position: relative; */
 }
 .desk_img{
     width: 325px;
@@ -235,4 +234,97 @@ background-color:#efefef;
 .latest_image img{
     width:260px;
     height: 250px;
+}
+.event1_text{
+    font-size: 19px;
+color: #fd9b0a;
+font-family: "Poppins";
+font-weight: 500;
+}
+.event2_text{
+    font-size: 19px;
+line-height: 21px;
+color: #a90032;
+font-family: "Poppins";
+font-weight: 500;
+}
+.latest_img{
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.footer_section{
+    background-color: #00001a;
+}
+.footer_heading{
+    font-size: 15px;
+line-height: 25px;
+color: #fd9b0a;
+font-family: "Poppins";
+font-weight: 500;
+text-align: left;
+margin-top: 20px;
+}
+.li_text li{
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    left: -2.5em;  
+}
+.imp_link ul{
+    list-style: none;
+}
+.li_text li:before {   
+    content: "";  
+    border-color: transparent #fd9b0a;  
+    border-style: solid;  
+    border-width: 0.35em 0 0.35em 0.45em;  
+    display: block;  
+    height: 0;  
+    width: 0;  
+    left: -2.5em;  
+    top: 0.9em;  
+    position: relative;  
+    margin: -5px;
+} 
+.grad_img{
+    margin-top: -25px;
+}
+.grad_text{
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    left: -2.5em;  
+    margin-top: -10px ;
+}
+.fa-map-marker,.fa-phone,.fa-envelope{
+    color: #fd9b0a;
+    margin-right: 10px;
+    margin-left: -1px;
+}
+.name_input{
+    margin: 15px 0;
+}
+.send_btn{
+    align-items: center;
+    color: #fff;
+    background-color: #a90032;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.follow_icon{
+    color: #fff;
+    float: left;
+    top: 5px;
+}
+.map_img img{
+    width: 255px;
+    height: 183px;
+    margin: -20px 0 0 -20px;
 }
