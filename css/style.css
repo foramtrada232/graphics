@@ -1,0 +1,238 @@
+.header_top{
+    background-color: #00001a;
+}
+.left_icon i{
+   background-color: #a90032;
+   color: #ffffff;
+   padding: 5px;
+   margin: 0 1px;
+   /* float: right; */
+}
+.fa {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.right_icon{
+    color: #fff;
+    float: right;
+    top: 5px;
+}
+
+.header img{
+    margin: 10px;
+    border: 1px solid gray;
+}
+.section {
+    float: left;
+    text-transform: capitalize
+}
+.header_text{
+    margin-left: 10px;
+    top: auto;
+    bottom: auto;
+    top: 35px;
+}
+.text{
+    color: #a10032;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text span{
+    position: relative;
+}
+.text2{
+    color: #d1580a;
+}
+.nav-tabs{
+    background-color: #a90032;
+    color: #fff !important;
+}
+.nav-tabs li a{
+    color: #fff !important;
+    text-align: center;
+    font-weight: 600;
+}
+.nav-tabs>li.active>a{
+    background-color: #fff !important;
+    color: #a90032 !important;
+}
+.nav-tabs>li>a:hover{
+    background-color: #a90032;
+    color: #fff !important;
+    border: none !important;
+}
+.slider_section{
+    background-image: url('.././images/college.png');
+    width: 100%;
+    height: 750px;
+    background-size: 100% 715px; 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider_section:before{
+    content: "";
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.slick-prev {
+    left: 13%;
+}
+.slick-next {
+    right: 13%;
+}
+.img_container img{
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+/* .img_container p{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+} */
+.slider_content{
+    font-size: 45px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: center;
+}
+.slider_content span{
+    font-size: 33px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: center;
+}
+.detail_img{
+    width: 655px;
+    height: 425px;
+}
+.lang_teach{
+    font-size: 30px;
+    line-height: 36px;
+    color: #a90032;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.detail_section_text{
+    width: 525px;
+    height: 168px;
+    font-size: 20px;
+    color: #000000;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+}
+.detail_button{
+    width: 136px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #a90032;
+}
+.button_text{
+    font-size: 20px;
+line-height: 22px;
+color: #a90032;
+font-family: "Poppins";
+font-weight: 500;
+text-align: left;
+}
+.button_icon{
+    width: 19px;
+    height: 20px;
+    font-size: 1.5em;
+}
+.trapesium {
+    float: left;
+    border-right: 25px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 35px solid #a90032;
+    padding: 0px 20px 0px 20px;
+    width: 810px;
+    height: 63px;
+    
+  }
+  .desk_section {
+    margin: 25px 0;
+    background-color:#efefef;
+  } 
+  .desk_text{
+    font-size: 35px;
+    line-height: 33px;
+    /* color: #ffffff; */
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+    /* position: relative; */
+}
+.desk_from_text{
+        position: absolute;
+        font-size: 15px;
+        /* color: #FFFFFF; */
+        font-family: "Poppins";
+        font-weight: 600;
+        text-align: center;
+        /* position: relative; */
+}
+.desk_img{
+    width: 325px;
+    height: 395px;
+    margin-top: 15px;
+}
+.rectangle {
+    height: 85px;
+    width: 325px;
+    background-color: #fd9b0a;
+}
+.principal_text{
+    font-size: 33px;
+line-height: 41px;
+color: #a90032;
+font-family: "Poppins";
+font-weight: 500;
+text-align: center;
+}
+.dr_text{
+    font-size: 38px;
+line-height: 41px;
+color: #ffffff;
+font-family: "Poppins";
+font-weight: 600;
+font-style: italic;
+text-align: center;
+margin: -10px;
+}
+.desk_text{
+font-size: 20px;
+color: #000000;
+font-family: "Poppins";
+font-weight: 400;
+text-align: left;
+}
+.desk_quote{
+    font-size: 20px;
+color: #a90032;
+font-family: "Poppins";
+font-weight: 400;
+text-align: left;
+border: none;
+background-color:#efefef;
+}
+.button_text img{
+    background: #a90032;
+    width: 35px;
+    height: 35px;
+}
+.latest_image img{
+    width:260px;
+    height: 250px;
+}
