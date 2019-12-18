@@ -1,6 +1,13 @@
+body{
+    overflow-x: hidden;
+}
+
 .header_top{
     background-color: #00001a;
 }
+/* .left_icon{
+    margin-left: 65px;
+} */
 .left_icon i{
    background-color: #a90032;
    color: #ffffff;
@@ -15,22 +22,21 @@
 .right_icon{
     color: #fff;
     float: right;
-    top: 5px;
+    margin-top: -22px;
 }
-
 .header img{
     margin: 10px;
     border: 1px solid gray;
 }
-.section {
-    float: left;
-    text-transform: capitalize
+.section_header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .header_text{
-    margin-left: 10px;
-    top: auto;
-    bottom: auto;
-    top: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .text{
     color: #a10032;
@@ -43,23 +49,34 @@
 .text2{
     color: #d1580a;
 }
-.nav-tabs{
+.header_bottom{
     background-color: #a90032;
     color: #fff !important;
 }
-.nav-tabs li a{
+.navbar-nav li{
+    margin-right: 10px;
+}
+.navbar-nav li a{
     color: #fff !important;
     text-align: center;
     font-weight: 600;
+    font-size: 16px;
 }
-.nav-tabs>li.active>a{
+.navbar-nav>li.active>a{
     background-color: #fff !important;
     color: #a90032 !important;
 }
-.nav-tabs>li>a:hover{
+.navbar-nav>li>a:hover{
     background-color: #a90032;
     color: #fff !important;
     border: none !important;
+}
+.navbar-collapse ul{
+    list-style: none;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    background: white;
+    color: #a90032 !important;
 }
 .slider_section{
     background-image: url('.././images/college.png');
@@ -112,8 +129,8 @@
     font-weight: 500;
     text-align: center;
 }
-.detail_img{
-    width: 655px;
+.detail_img img{ 
+    width: 100%;
     height: 425px;
 }
 .lang_teach{
@@ -132,6 +149,9 @@
     font-weight: 400;
     text-align: left;
 }
+.detail_section{
+    padding: 50px 0px;
+}
 .detail_button{
     width: 136px;
     height: 50px;
@@ -140,23 +160,27 @@
 }
 .button_text{
     font-size: 20px;
-line-height: 22px;
-color: #a90032;
-font-family: "Poppins";
-font-weight: 500;
-text-align: left;
+    line-height: 22px;
+    color: #a90032;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: left;
+}
+.desk_section button{
+    width:175px;
+    height: auto;
 }
 .button_icon{
     width: 19px;
     height: 20px;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 .trapesium {
-    float: left;
+    /* float: left; */
     border-right: 25px solid transparent;
     border-left: 0px solid transparent;
     border-top: 35px solid #a90032;
-    padding: 0px 20px 0px 20px;
+    /* padding: 0px 20px 0px 20px; */
     width: 810px;
     height: 63px;
     
@@ -172,81 +196,119 @@ text-align: left;
     font-family: "Poppins";
     font-weight: 600;
     text-align: center;
-    /* position: relative; */
+    position: relative;
+    margin-top: 25px;
+}
+.desk_text_before::before{
+    content: 'FROM PRINCIPALS DESK';
+    border-right: 25px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 35px solid #a90032;
+    /* padding: 0px 20px 0px 20px; */
+    width: 100%;
+    height: 63px;
+    color: #fff;
+    position: absolute;
+    font-size: 28px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-align: center;
+}
+/* .desk_from_text{
+    position: absolute;
+    font-size: 28px;
+    left: 310px;
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-weight: 600;
+} */
+.desk_from_text:after{
+    content: '';
+    position: absolute;
+    border-right: 25px solid transparent;
+    border-left: 0px solid transparent;
+    border-top: 35px solid #a90032;
+    width: 810px;
+    height: 63px;
+}
+.footer_input input{
+    width: 100%;
 }
 .desk_from_text{
-        position: absolute;
-        font-size: 28px;
-        left: 310px;
-        color: #FFFFFF;
-        font-family: "Poppins";
-        font-weight: 600;
+    /* margin-top: -37px; */
+    /* position: relative; */
+    font-size: 28px;
+    /* left: 225px; */
+    color: #FFFFFF;
+    font-family: "Poppins";
+    font-weight: 600;
 }
 .desk_img{
-    width: 325px;
+    width: 100%;
     height: 395px;
-    margin-top: 15px;
+    margin: -45px 0 0 5px;
 }
 .rectangle {
     height: 85px;
-    width: 325px;
+    width: 100%;
     background-color: #fd9b0a;
+    margin: 0 0 10px 5px;
 }
 .principal_text{
     font-size: 33px;
-line-height: 41px;
-color: #a90032;
-font-family: "Poppins";
-font-weight: 500;
-text-align: center;
+    line-height: 41px;
+    color: #a90032;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: center;
 }
 .dr_text{
     font-size: 38px;
-line-height: 41px;
-color: #ffffff;
-font-family: "Poppins";
-font-weight: 600;
-font-style: italic;
-text-align: center;
-margin: -10px;
+    line-height: 41px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin: -10px;
 }
 .desk_text{
-font-size: 20px;
-color: #000000;
-font-family: "Poppins";
-font-weight: 400;
-text-align: left;
+    font-size: 20px;
+    color: #000000;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 50px;
 }
 .desk_quote{
     font-size: 20px;
-color: #a90032;
-font-family: "Poppins";
-font-weight: 400;
-text-align: left;
-border: none;
-background-color:#efefef;
+    color: #a90032;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    background-color:#efefef;
 }
 .button_text img{
-    background: #a90032;
-    width: 35px;
-    height: 35px;
+    margin: -5px 0 0 5px;
 }
 .latest_image img{
-    width:260px;
+    width: auto;
     height: 250px;
+    padding: 10px;
 }
 .event1_text{
     font-size: 19px;
-color: #fd9b0a;
-font-family: "Poppins";
-font-weight: 500;
+    color: #fd9b0a;
+    font-family: "Poppins";
+    font-weight: 500;
 }
 .event2_text{
     font-size: 19px;
-line-height: 21px;
-color: #a90032;
-font-family: "Poppins";
-font-weight: 500;
+    line-height: 21px;
+    color: #a90032;
+    font-family: "Poppins";
+    font-weight: 500;
 }
 .latest_img{
     margin-top: -15px;
@@ -257,12 +319,12 @@ font-weight: 500;
 }
 .footer_heading{
     font-size: 15px;
-line-height: 25px;
-color: #fd9b0a;
-font-family: "Poppins";
-font-weight: 500;
-text-align: left;
-margin-top: 20px;
+    line-height: 25px;
+    color: #fd9b0a;
+    font-family: "Poppins";
+    font-weight: 500;
+    text-align: left;
+    margin-top: 20px;
 }
 .li_text li{
     font-size: 12px;
@@ -291,6 +353,7 @@ margin-top: 20px;
 } 
 .grad_img{
     margin-top: -25px;
+    /* line-height: 1px; */
 }
 .grad_text{
     font-size: 12px;
@@ -320,11 +383,74 @@ margin-top: 20px;
 }
 .follow_icon{
     color: #fff;
-    float: left;
     top: 5px;
 }
 .map_img img{
-    width: 255px;
+    width: 100%;
     height: 183px;
-    margin: -20px 0 0 -20px;
+    background-image: url('./images');
+    /* background-image: url('../.././images/map (1).png');
+    width: 50%;
+    height: 180px; */
 }
+.copyright{
+    background-color: #a90032;
+    color: #fff;
+}
+.copyright p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+    margin: 10px 10px!important;
+}
+.detail_image{
+    float: left;
+}
+.red-title {
+    width: 60%;
+    padding: 5px 100px 5px 10px;
+    font-size: 35px;
+    position: relative;
+    color: #FFF;
+    background: rgb(150, 12, 53);
+    z-index: 3;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.red-title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #A90032;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+}
+.slick-dots li.slick-active button:before {
+    color: #A90032!important;
+}
+.slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    font-size: 20px!important;
+}
+/* .slick-slide,.slick-current,.slick-active::before{
+    content: "";
+    background-color: rgba(0,0,0,0.85);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+} */
