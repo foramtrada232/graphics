@@ -5,15 +5,11 @@ body{
 .header_top{
     background-color: #00001a;
 }
-/* .left_icon{
-    margin-left: 65px;
-} */
 .left_icon i{
    background-color: #a90032;
    color: #ffffff;
    padding: 5px;
    margin: 0 1px;
-   /* float: right; */
 }
 .fa {
     font-size: 20px;
@@ -22,7 +18,7 @@ body{
 .right_icon{
     color: #fff;
     float: right;
-    margin-top: -22px;
+    margin-top: -25px;
 }
 .header img{
     margin: 10px;
@@ -110,11 +106,7 @@ body{
     height: 180px;
     margin: auto;
 }
-/* .img_container p{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-} */
+
 .slider_content{
     font-size: 45px;
     color: #ffffff;
@@ -173,14 +165,11 @@ body{
 .button_icon{
     width: 19px;
     height: 20px;
-    /* font-size: 1.5em; */
 }
 .trapesium {
-    /* float: left; */
     border-right: 25px solid transparent;
     border-left: 0px solid transparent;
     border-top: 35px solid #a90032;
-    /* padding: 0px 20px 0px 20px; */
     width: 810px;
     height: 63px;
     
@@ -189,22 +178,11 @@ body{
     margin: 25px 0;
     background-color:#efefef;
   } 
-  .desk_text{
-    font-size: 35px;
-    line-height: 33px;
-    /* color: #ffffff; */
-    font-family: "Poppins";
-    font-weight: 600;
-    text-align: center;
-    position: relative;
-    margin-top: 25px;
-}
 .desk_text_before::before{
     content: 'FROM PRINCIPALS DESK';
     border-right: 25px solid transparent;
     border-left: 0px solid transparent;
     border-top: 35px solid #a90032;
-    /* padding: 0px 20px 0px 20px; */
     width: 100%;
     height: 63px;
     color: #fff;
@@ -214,14 +192,6 @@ body{
     font-weight: 600;
     text-align: center;
 }
-/* .desk_from_text{
-    position: absolute;
-    font-size: 28px;
-    left: 310px;
-    color: #FFFFFF;
-    font-family: "Poppins";
-    font-weight: 600;
-} */
 .desk_from_text:after{
     content: '';
     position: absolute;
@@ -235,24 +205,22 @@ body{
     width: 100%;
 }
 .desk_from_text{
-    /* margin-top: -37px; */
-    /* position: relative; */
     font-size: 28px;
-    /* left: 225px; */
     color: #FFFFFF;
     font-family: "Poppins";
     font-weight: 600;
 }
+.box-image{
+    margin-bottom: 10px;
+}
 .desk_img{
     width: 100%;
     height: 395px;
-    margin: -45px 0 0 5px;
 }
 .rectangle {
     height: 85px;
     width: 100%;
     background-color: #fd9b0a;
-    margin: 0 0 10px 5px;
 }
 .principal_text{
     font-size: 33px;
@@ -279,6 +247,8 @@ body{
     font-weight: 400;
     text-align: left;
     padding-bottom: 50px;
+    position: relative;
+    margin-top: 25px;
 }
 .desk_quote{
     font-size: 20px;
@@ -292,18 +262,14 @@ body{
 .button_text img{
     margin: -5px 0 0 5px;
 }
-.latest_image img{
-    width: auto;
-    height: 250px;
-    padding: 10px;
-}
+
 .event1_text{
     font-size: 19px;
     color: #fd9b0a;
     font-family: "Poppins";
     font-weight: 500;
 }
-.event2_text{
+.latest_image img :hover{
     font-size: 19px;
     line-height: 21px;
     color: #a90032;
@@ -351,10 +317,6 @@ body{
     position: relative;  
     margin: -5px;
 } 
-.grad_img{
-    margin-top: -25px;
-    /* line-height: 1px; */
-}
 .grad_text{
     font-size: 12px;
     line-height: 25px;
@@ -388,10 +350,6 @@ body{
 .map_img img{
     width: 100%;
     height: 183px;
-    background-image: url('./images');
-    /* background-image: url('../.././images/map (1).png');
-    width: 50%;
-    height: 180px; */
 }
 .copyright{
     background-color: #a90032;
@@ -415,7 +373,7 @@ body{
     font-size: 35px;
     position: relative;
     color: #FFF;
-    background: rgb(150, 12, 53);
+    background: #A90032;
     z-index: 3;
     text-align: right;
     text-transform: uppercase;
@@ -436,21 +394,132 @@ body{
     -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
 }
-.slick-dots li.slick-active button:before {
+.latest_news_slider .slick-dots li.slick-active button:before {
     color: #A90032!important;
 }
-.slick-dots li button:before {
+.latest_news_slider .slick-dots li button:before {
     width: 15px;
     height: 15px;
     border-radius: 7px;
     font-size: 20px!important;
 }
-/* .slick-slide,.slick-current,.slick-active::before{
-    content: "";
-    background-color: rgba(0,0,0,0.85);
+.latest_news_slider .slick-slide {
+    margin: 10px;
+}
+.left_li li,.right_li li{
+    display: inline-block;
+}
+.right_li li a{
+    color: #FFF!important;
+}
+.left_icon ul{
+    margin: 0;
+    padding: 0;
+}
+.latest_image img{
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    transition: .3s ease;
+    background-color:transparent;
+  }
+ .latest_image:hover .overlay{
+     opacity: 1;
+     cursor: pointer;
+     background-color: rgba(0,0,0,0.75);
+ }
+ .latest_image{
+     position: relative;
+ }
+ .image_slider:hover p {
+     color: #A90032;
+ }
+ .latest_image:hover .verticalLine,.latest_image:hover .horizontalLine,.latest_image:hover .rotate-vertical,.latest_image:hover .rotate-horizontal{
+     background-color: #fff;
+ }
+ .latest_image:hover .view-detail{
+     color: #fff;
+ }
+ .verticalLine {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 1px;
+    top: 10px;
+    bottom: 0px;
+    left: 10px;
+    height: 100px;
+    transform: translateX(-50%)
+ }
+ .horizontalLine {
+    position: absolute;
+    width: 1px;
+    top: 10px;
+    bottom: 0;
+    left: 60px;
+    background-color: transparent;
+    transform: translate(-50%, -50%) rotate(90deg);
+    height:100px;
+ }
+ .rotate-vertical{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 1px;
+    bottom: 10px;
+    height: 100px;
+    right: 10px;
+    transform: rotate(180deg);
+ }
+ .rotate-horizontal{
+    position: absolute;
+    width: 1px;
+    bottom: -90px;
+    right: 60px;
+    background-color: transparent;
+    transform:translate(-50%, -50%) rotate(90deg);
+    height:100px;
+ }
+ .view-detail{
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: relative;
-} */
+    color: transparent;
+ }
+ .footer p{
+     margin: 0;
+     padding: 0;
+ }
+ .search-image {
+    margin-left: auto;
+    margin-top: -40px;
+    width: 50px;
+    height: 40px;
+}
+.search-icon{
+    right: 15%!important;
+    position: absolute;
+    top: 7%;
+}
+.navbar-toggler-icon{
+    color: #000000;
+}
+.header button{
+    background-color: #A90032;
+    margin-left: 80%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-40%, -200%);
+}
