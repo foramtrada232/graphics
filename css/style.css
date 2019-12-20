@@ -50,7 +50,7 @@ body{
     color: #fff !important;
 }
 .navbar-nav li{
-    margin-right: 10px;
+    margin-right: 23px;
 }
 .navbar-nav li a{
     color: #fff !important;
@@ -131,6 +131,10 @@ body{
     color: #a90032;
     font-family: "Poppins";
     font-weight: 600;
+    margin-bottom: 0;
+}
+.lang-text{
+    margin-top: 15px;
 }
 .detail_section_text{
     width: 525px;
@@ -212,6 +216,7 @@ body{
 }
 .box-image{
     margin-bottom: 10px;
+    margin-top: -30px;
 }
 .desk_img{
     width: 100%;
@@ -278,10 +283,10 @@ body{
 }
 .latest_img{
     margin-top: -15px;
-    margin-bottom: 20px;
 }
 .footer_section{
     background-color: #00001a;
+    margin-top: 55px;
 }
 .footer_heading{
     font-size: 15px;
@@ -290,7 +295,8 @@ body{
     font-family: "Poppins";
     font-weight: 500;
     text-align: left;
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+    padding: 0;
 }
 .li_text li{
     font-size: 12px;
@@ -326,6 +332,9 @@ body{
     text-align: left;
     left: -2.5em;  
     margin-top: -10px ;
+}
+.grad_img{
+    margin-top: -10px;
 }
 .fa-map-marker,.fa-phone,.fa-envelope{
     color: #fd9b0a;
@@ -366,6 +375,9 @@ body{
 }
 .detail_image{
     float: left;
+}
+.red-title p{
+    margin-top: 10px;
 }
 .red-title {
     width: 60%;
@@ -498,10 +510,7 @@ body{
     position: relative;
     color: transparent;
  }
- .footer p{
-     margin: 0;
-     padding: 0;
- }
+
  .search-image {
     margin-left: auto;
     margin-top: -40px;
@@ -509,17 +518,30 @@ body{
     height: 40px;
 }
 .search-icon{
-    right: 15%!important;
+    right: 10%!important;
     position: absolute;
-    top: 7%;
+    top: 10%;
 }
 .navbar-toggler-icon{
     color: #000000;
 }
-.header button{
-    background-color: #A90032;
-    margin-left: 80%;
-    top: 30%;
-    left: 50%;
-    transform: translate(-40%, -200%);
+button.navbar-toggler{
+    position: absolute;
+    left: auto;
+    top: 60px;
+    right: 17%;
+    margin-right: 20px;
+    background-color: #f29532;
+    /* color: #000000; */
+}
+button.navbar-toggler span{
+    color: #000000;
+    background-color: #000;
+}
+.navbar-toggler-icon{
+    color: #000000!important;
+    background-color: #f29532;
+}
+.footer_input input::placeholder{
+    font-size: 12px;
 }

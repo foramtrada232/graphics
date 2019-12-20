@@ -1,10 +1,12 @@
 @media (max-width: 2098px){
-    .search-icon,.header button {display: none}
+    .search-icon,button.navbar-toggler{display: none}
+    .box-image {margin-top: 0;}
 }
 @media (max-width: 1920px){
     .slider_content {font-size: 45px;}
     .slider_content span,.red-title{font-size: 33px;}
-    .search-icon,.header button {display: none}
+    .search-icon{display: none}
+    .box-image {margin-top: -40px;}
 }
 @media (max-width: 1199px){
     .slider_content {font-size: 35px;}
@@ -18,26 +20,41 @@
     .header_bottom .search-image {display: none;}
     .section_header img {width: 75%}
     .header_text p {font-size: 13px;}
-    .search-icon,.header button {display: inline-block}
+    .search-icon{display: inline-block}
+    .dr_text {font-size: 32px;}
+    .section_header {justify-content: flex-start;}
+     button.navbar-toggler{display: inline-block}
+    .detail_section {padding: 30px 0;}
 }
 @media (max-width: 855px){
     .search-icon {right:8%!important}
-    .header button {transform: translate(-25%, -200%);}
 }
 @media (max-width: 767px){
     .slider_content {font-size: 25px;}
-    .slider_content span,.red-title{font-size: 18px;}
+    .slider_content span,.red-title {font-size: 18px;}
     .footer_heading {font-size: 12px;}
     .search-icon {right:5%!important}
-    .header button {transform: translate(55%, -200%);}
-}
-@media (max-width: 645px){
-    .search-icon { top: 5%!important;right:0!important}
-    .header button {transform: translate(70%, -120%);}
+    .dr_text {font-size: 32px;margin: -25px;line-height: 27px;}
+    .map_img img {height: auto;width: 130%;}
 }
 @media (max-width: 575px){
     .slider_content {font-size: 20px;}
     .slider_content span,.red-title{font-size: 21px;}
     .footer_heading {font-size: 15px;}
     .search-icon {right:0!important}
+    .box-image {margin-top: 0;}
+    .dr_text {font-size: 35px;margin: 0;line-height: 15px;}
+    .desk_text {padding-bottom: 0;}
+    .desk_section button {margin-bottom: 30px;}
+    .map_img img  {height: auto;margin-bottom: 20px;}
+    .li_text li {font-size: 18px;}
+    .grad_text {font-size: 18px;}
+    .map_img img {width: 100%;}
+}
+@media (max-width: 552px){
+    .text,.text2 {display: none;}
+    .section_header {justify-content: center;}
+}
+@media (max-width: 402px){
+    .section_header {justify-content: flex-start;}
 }
